@@ -10,7 +10,9 @@ configure :development do
   DataMapper::Logger.new($stdout, :debug)
   DataMapper.setup(:default, 'sqlite:sinatra_service.db')
 end
-
+configure :production do
+  DataMapper.setup(:default, 'postgress:sinatra_service.db')
+end
 
 
 DataMapper.finalize
