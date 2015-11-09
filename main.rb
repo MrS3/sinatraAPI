@@ -11,7 +11,7 @@ configure :development do
   DataMapper.setup(:default, 'sqlite:sinatra_service.db')
 end
 configure :production do
-  DataMapper.setup(:default, 'postgress://ivtgafmmrvwvrr:Py9QZC6sNWWtKc4LTaUYpURlyo@dkannidokv5du/sinatraTest')
+  DataMapper.setup(:default, 'postgres://ivtgafmmrvwvrr:Py9QZC6sNWWtKc4LTaUYpURlyo@ec2-107-21-221-59.compute-1.amazonaws.com:5432/dkannidokv5du')
 end
 DataMapper.finalize
 DataMapper.auto_upgrade!
