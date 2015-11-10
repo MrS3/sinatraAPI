@@ -8,7 +8,7 @@ class Movie
   property :updated_at, DateTime
 
   def moveDescription= newDescription
-      @description = newDescription.downcase
+      @descript = newDescription.downcase
   end
 
 end

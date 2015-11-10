@@ -8,7 +8,7 @@ gem 'dm-timestamps'
 gem 'dm-validations'
 gem 'dm-aggregates'
 gem 'dm-migrations'
-
+gem 'stripe'
 group :production do
   gem 'pg'
   gem 'dm-postgres-adapter'
