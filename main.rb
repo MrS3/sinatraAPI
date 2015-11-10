@@ -7,6 +7,7 @@ require './models/movie'
 require './models/user'
 require './routes/movies'
 require './routes/users'
+require './routes/charges'
 
 set :publishable_key, ENV['PUBLISHABLE_KEY']
 set :secret_key, ENV['SECRET_KEY']
